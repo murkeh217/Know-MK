@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:uie="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
+>
+
+    <ui:VisualElement>
+
+    <!-- LOADER -->
+    <ui:VisualElement name="loader" class="loader">
+        <ui:VisualElement class="loader-spinner" />
+        <ui:Label name="loaderText" text="0%" class="loader-text" />
+    </ui:VisualElement>
+
+    <!-- TABS (horizontal scroll for mobile) -->
+    <ui:VisualElement class="tabs-wrap">
+        <ui:Button name="tab-left" class="tab-arrow left">◀</ui:Button>
+    <ui:ScrollView name="tabs" class="gallery-thumbs" mode="Horizontal" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden">
+            <ui:VisualElement class="tabs-inner">
+            <ui:Button class="tab-button" text="Zodiac" />
+            <ui:Button class="tab-button" text="OS" />
+            <ui:Button class="tab-button" text="Workout" />
+            <ui:Button class="tab-button" text="Collection" />
+            <ui:Button class="tab-button" text="Music" />
+            <ui:Button class="tab-button" text="Art" />
+            <ui:Button class="tab-button" text="Swimming" />
+            <ui:Button class="tab-button" text="Riding" />
+            <ui:Button class="tab-button" text="Anime" />
+            <ui:Button class="tab-button" text="Diet" />
+            <ui:Button class="tab-button" text="Spicy" />
+            <ui:Button class="tab-button" text="Online" />
+            <ui:Button class="tab-button" text="Gaming" />
+            <ui:Button class="tab-button" text="Philosophy" />
+            <ui:Button class="tab-button" text="Language" />
+            <ui:Button class="tab-button" text="Avatar" />
+            <ui:Button class="tab-button" text="Travel" />
+            <ui:Button class="tab-button" text="Personality" />
+            <ui:Button class="tab-button" text="TV" />
+            <ui:Button class="tab-button" text="Wishlist" />
+            <ui:Button class="tab-button" text="Idols" />
+            <ui:Button class="tab-button" text="Football" />
+            <ui:Button class="tab-button" text="Comedy" />
+            <ui:Button class="tab-button" text="Powers" />
+            <ui:Button class="tab-button" text="+" />
+            <ui:Button class="tab-button" text="Ghosts" />
+        </ui:VisualElement>
+        </ui:ScrollView>
+        <ui:Button name="tab-right" class="tab-arrow right">▶</ui:Button>
+    </ui:VisualElement>
+
+    <!-- MAIN SLIDE AREA -->
+    <ui:VisualElement name="slideContainer" class="gallery-top" />
+
+    <!-- WAVES -->
+    <ui:VisualElement class="ocean">
+        <ui:VisualElement class="wave" />
+        <ui:VisualElement class="wave second" />
+    </ui:VisualElement>
+
+
+    </ui:VisualElement>
+
+</ui:UXML>
